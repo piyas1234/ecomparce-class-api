@@ -6,6 +6,7 @@ const userRouter = require('./routes/AuthRoutes');
 const ProductRoute = require('./routes/ProductRoutes');
 const productBrandRoute = require('./routes/ProductRoutes/ProductBrandRoute');
 const productCategoryRoute = require('./routes/ProductRoutes/ProductCategoryRoute');
+const SliderRoute = require('./routes/SliderRoutes');
  
 
 
@@ -17,6 +18,9 @@ app.use("/auth",userRouter)
 app.use("/product",ProductRoute)
 app.use("/category",productCategoryRoute)
 app.use("/brand",productBrandRoute)
+app.use("/slider",SliderRoute)
+
+
 
 app.get('/', async (req, res) => {
   res.json({

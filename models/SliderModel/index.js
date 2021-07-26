@@ -32,8 +32,8 @@ const sliderSchema = new mongoose.Schema(
       required: true,
     },
     description: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "profile",
+      type: String,
+      required: true,
     },
   },
   { timestamps: true }

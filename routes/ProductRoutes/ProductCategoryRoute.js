@@ -9,6 +9,4 @@ productCategoryRoute.get("/:id", getSingleProductCategoryView)
 productCategoryRoute.delete("/:id", DeleteSingleProductCategoryView)
 productCategoryRoute.post("/", postProductCategoryView)
 
-
-
 module.exports = productCategoryRoute;
