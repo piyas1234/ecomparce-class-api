@@ -1,5 +1,6 @@
 const { ObjectId } = require("mongodb");
 const productModel = require("../../models/ProductModel");
+const productCategory = require("../../models/ProductModel/categoryProduct");
  
 
 
@@ -50,6 +51,8 @@ exports.getProductsView = async (req, res) => {
   }
 };
 
+
+
 exports.getProductsbyCategoryView = async (req, res) => {
   const { page = 1, limit = 10 } = req.query;
   try {
@@ -71,6 +74,10 @@ exports.getProductsbyCategoryView = async (req, res) => {
     await res.send(err);
   }
 };
+
+
+
+ 
 
 
 exports.getProductsbyBrandView = async (req, res) => {

@@ -1,4 +1,4 @@
-const { getProductsView, getSingleProductView, DeleteSingleProductView, postProductView, getProductsbyBrandView, getProductsbyCategoryView, UpdateSingleProductView } = require('../../view/productView')
+const { getProductsView, getSingleProductView, DeleteSingleProductView, postProductView, getProductsbyBrandView, getProductsbyCategoryView, UpdateSingleProductView, getAllProductsbyCategoryView } = require('../../view/productView')
 const ProductRoute = require('express').Router()
  
 
