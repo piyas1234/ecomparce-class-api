@@ -6,7 +6,7 @@ const productCategory = require("../../models/ProductModel/categoryProduct");
 
 exports.GetSearchProductsView = async (req, res) => {
   const { page = 1, limit = 10 } = req.query;
-  const search = req.body.input;
+  const search = req.params.input
   try {
     const products = await productModel
       .find({ name: { $regex: search } })
