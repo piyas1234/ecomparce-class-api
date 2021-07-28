@@ -39,7 +39,7 @@ exports.postSliderView = async (req, res) => {
   await newProduct.save((err) => {
     if (err) {
       res.status(500).json({
-        error: "There was a server side error",
+        error: err,
       });
     } else {
       res.status(200).json({

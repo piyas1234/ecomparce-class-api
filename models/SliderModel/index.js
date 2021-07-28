@@ -8,7 +8,7 @@ const sliderSchema = new mongoose.Schema(
       required: true,
     },
 
-    product_type: {
+    product_category: {
       type: String,
       required: true,
     },
